@@ -445,6 +445,34 @@
   .games-grid { grid-template-columns: 1fr; }
   .card-thumb { height: 120px; }
 }
+.edu-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 238, 0, 0.12);        /* fundo amarelo neon */
+  border: 1px solid rgba(255, 238, 0, 0.5);   /* borda amarela */
+  border-radius: 4px;
+  padding: 4px 12px;
+  color: var(--neon-yellow);                   /* texto amarelo neon */
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.48rem;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: all 0.2s;
+  white-space: nowrap;
+  cursor: pointer;
+  animation: pulse 2s ease-in-out infinite;   /* pisca suave */
+}
+
+.edu-link:hover {
+  background: rgba(255, 238, 0, 0.28);
+  box-shadow: 0 0 18px rgba(255, 238, 0, 0.5);
+}
+
+@keyframes pulse {
+  0%,100% { box-shadow: 0 0 6px rgba(255,238,0,0.3); }
+  50%      { box-shadow: 0 0 18px rgba(255,238,0,0.7); }
+}
 </style>
 </head>
 <body>
